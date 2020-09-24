@@ -68,7 +68,7 @@ int main() //the main method is the starting point of the program
 	*/
 	
 	//we are going to use the value you gave to b
-	printf("ID STATEMENT RESULT:\n");
+	printf("IF STATEMENT RESULT:\n");
 	if(b == 5)
 	{
 		printf("You have 5 fingers\n");
@@ -77,7 +77,7 @@ int main() //the main method is the starting point of the program
 	{
 		printf("You have 2 eyes\n");
 	}
-	esle
+	else
 	{
 		printf("You weren't lucky :/\n");
 	}
@@ -101,9 +101,52 @@ int main() //the main method is the starting point of the program
 			break;
 		default://if none of the cases above are true, the default is executed
 			//it is not necessary
-			printf("Default case executed\n")
+			printf("Default case executed\n");
 			break;
 	}
+	
+	//WHILE LOOP
+	/*
+	while loops are very simple:
+	the code inside them is repated WHILE a given
+	statement is true
+	example:
+	while(working)
+	{
+		don't fall asleep
+	}
+	*/
+	
+	int whileNum = 0;
+	
+	
+	while(whileNum <= 5)
+	{
+		printf("Please enter a number greater than 5:");
+		scanf("%d", &whileNum);
+	}
+	
+	//FOR LOOP
+	/*
+	for loops are similar to while loops but
+	the code inside is being repeated a given number of times
+	example: for(int i = 1; i < 5; i++);
+	explenation:
+		for(init a number; 
+		while the number is smaller than a value;
+		add 1 to the number in the end of each cycle)
+	*/
+	
+	int forLoopNum = 0;
+	printf("How many times would you like to print a message: ");
+	scanf("%d", &forLoopNum);
+	
+	for(int i = 0; i < forLoopNum; i++)
+	{
+		printf("Message!\n");
+	}
+	
+	//UPCOMING: ARRAYS; WORKING WITH ARRAYS; STRINGS
 	
 	return 0;//just make sure you have this
 }
